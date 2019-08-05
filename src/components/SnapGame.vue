@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-
+    {{yourcard}}
+    {{cards.cards[0].image}}
 
   </div>
 </template>
@@ -16,14 +17,16 @@ export default {
   },
     data() {
     return {
-      cards: []
+      cards: [],
+      yourcard: "Your Card",
+      currentcard: "",
     };
   },
   created () {
         axios.get('https://deckofcardsapi.com/api/deck/new/draw/?count=12')
     .then(res => this.cards = res.data)
     .catch(err => console.log(err));
-    // console.log(todos)
+    
   }
 }
 </script>
