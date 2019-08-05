@@ -1,0 +1,1 @@
+// This component should contain the card dealt from the pack for checking.

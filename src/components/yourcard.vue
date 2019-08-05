@@ -1,0 +1,1 @@
+// This component should contain one card, dealt once. This will then be compared by the player with other cards from the pack.

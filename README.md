@@ -1,9 +1,7 @@
 # Snapgame
 
 ## Project Aims
-1. 
-
-## Developer Aims
+1. Build a SPA that enables you to play a game of snap using VueJS and deckofcardsapi
 
 ## Technologies
 * Vue.js

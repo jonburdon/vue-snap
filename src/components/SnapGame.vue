@@ -1,12 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
+    <!-- Display card data for card[0] -->
+    <p> 
     Your Card is the 
     {{cards.cards[0].value}} of 
     {{cards.cards[0].suit}} and it's code is {{cards.cards[0].code}} <br>
     It's image url is {{cards.cards[0].image}}
     </p>
+    <!-- Display the rest of the cards in the pack -->
     <p>The other cards in the pack are:</p>
 <!-- Could use v-for to display them all. -->
 {{cards.cards[0].value}} of {{cards.cards[1].suit}} <br>
