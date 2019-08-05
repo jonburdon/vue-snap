@@ -1,6 +1,6 @@
 # Snapgame
 
-![alt text](assets/cardsdisplaying.png "Cards displaying")
+!(./assets/cardsdisplaying.png "Cards displaying")
 
 
 ## Project Aims
