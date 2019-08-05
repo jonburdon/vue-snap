@@ -1,4 +1,4 @@
-# snapgame
+# Snapgame
 
 
 ### Further Steps to take in SnapGame.vue:
