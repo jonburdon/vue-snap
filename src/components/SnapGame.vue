@@ -8,7 +8,7 @@
     It's image url is {{cards.cards[0].image}}
     </p>
     <p>The other cards in the pack are:</p>
-<!-- Need to use v-for to display them all. -->
+<!-- Could use v-for to display them all. -->
 {{cards.cards[0].value}} of {{cards.cards[1].suit}} <br>
 {{cards.cards[0].value}} of {{cards.cards[2].suit}} <br>
 {{cards.cards[0].value}} of {{cards.cards[3].suit}} <br>
@@ -20,14 +20,14 @@
 {{cards.cards[0].value}} of {{cards.cards[9].suit}} <br>
 {{cards.cards[0].value}} of {{cards.cards[10].suit}} <br>
 {{cards.cards[0].value}} of {{cards.cards[11].suit}} <br>
-  
+
   </div>
 </template>
 
 <script>
-
+import yourcard from "../components/yourcard.vue";
+import checkcard from "../components/checkcard.vue";
 import axios from 'axios';
-
 
 export default {
   name: 'SnapGame',
