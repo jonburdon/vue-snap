@@ -19,6 +19,10 @@
 
 * Load data from deck of cards api using axios
 
+* Display card images to show the [0] card, and then all 12 cards.
+
+* Add shuffle function as a method
+
 * Created empty components yourcard.vue and checkcard.vue for potential refactoring into two separate components.
 
 * Document the next steps (see below)
@@ -26,13 +30,13 @@
 
 ### Further Steps to take in SnapGame.vue:
 
-1. Transfer code in to components yourcard.vue and checkcard.vue
+1. ~~Display card image for cards.cards[0]~~
 
-2. ~~Display card image for cards.cards[0]~~
+2. Transfer code in to components yourcard.vue and checkcard.vue
 
 3. Create a function to set the value of yourcard as cards.cards[0].code
 
-4. Shuffle the data in cards: array
+4. Run shuffle function to shuffle the data in cards: array
 
 5. Iterate through the shuffled array cards: 2 seconds at a time, showing the card image.
 
