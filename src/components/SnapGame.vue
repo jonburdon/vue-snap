@@ -11,17 +11,17 @@
     <!-- Display the rest of the cards in the pack -->
     <p>The other cards in the pack are:</p>
 <!-- Could use v-for to display them all. -->
-{{cards.cards[0].value}} of {{cards.cards[1].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[2].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[3].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[4].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[5].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[6].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[7].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[8].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[9].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[10].suit}} <br>
-{{cards.cards[0].value}} of {{cards.cards[11].suit}} <br>
+{{cards.cards[1].value}} of {{cards.cards[1].suit}} <br>
+{{cards.cards[2].value}} of {{cards.cards[2].suit}} <br>
+{{cards.cards[3].value}} of {{cards.cards[3].suit}} <br>
+{{cards.cards[4].value}} of {{cards.cards[4].suit}} <br>
+{{cards.cards[5].value}} of {{cards.cards[5].suit}} <br>
+{{cards.cards[6].value}} of {{cards.cards[6].suit}} <br>
+{{cards.cards[7].value}} of {{cards.cards[7].suit}} <br>
+{{cards.cards[8].value}} of {{cards.cards[8].suit}} <br>
+{{cards.cards[9].value}} of {{cards.cards[9].suit}} <br>
+{{cards.cards[10].value}} of {{cards.cards[10].suit}} <br>
+{{cards.cards[11].value}} of {{cards.cards[11].suit}} <br>
 
   </div>
 </template>
@@ -50,7 +50,7 @@ export default {
     }
   },
   created () {
-        axios.get('https://deckofcardsapi.com/api/deck/new/draw/?count=12')
+    axios.get('https://deckofcardsapi.com/api/deck/new/draw/?count=12')
     .then(res => this.cards = res.data)
     .catch(err => console.log(err));
   }
