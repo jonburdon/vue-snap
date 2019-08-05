@@ -1,7 +1,6 @@
 # Snapgame
 
-!(/assets/cardsdisplaying.png "Cards displaying")
-
+![Let's Play Snap](assets/cardsdisplaying.png)
 
 ## Project Aims
 1. Build a SPA that enables you to play a game of snap using VueJS and deckofcardsapi
