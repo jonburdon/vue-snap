@@ -8,6 +8,7 @@
 <script>
 import SnapGame from './components/SnapGame.vue'
 
+
 export default {
   name: 'app',
   components: {

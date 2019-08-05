@@ -1,14 +1,20 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    {{yourcard}}
-    {{cards.cards[0].image}}
+    <p>
+    Your Card is the 
+    {{cards.cards[0].value}} of 
+    {{cards.cards[0].suit}} and it's code is {{cards.cards[0].code}}
 
+    </p>
+    
+   
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+
 
 export default {
   name: 'SnapGame',
@@ -18,7 +24,7 @@ export default {
     data() {
     return {
       cards: [],
-      yourcard: "Your Card",
+      yourcardcode: "",
       currentcard: "",
     };
   },
@@ -26,7 +32,8 @@ export default {
         axios.get('https://deckofcardsapi.com/api/deck/new/draw/?count=12')
     .then(res => this.cards = res.data)
     .catch(err => console.log(err));
-    
+
+
   }
 }
 </script>
