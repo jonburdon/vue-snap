@@ -11,17 +11,17 @@
 * Deck of Cards api https://deckofcardsapi.com/
 
 ### Approach
-Project setup using CLI and vue create
+* Project setup using CLI and vue create
 
-Rename HelloWorld.vue to SnapGame.vue
+* Rename HelloWorld.vue to SnapGame.vue
 
-Installed axios through CLI using npm in axios
+* Installed axios through CLI using npm in axios
 
-Load data from deck of cards api using axios
+* Load data from deck of cards api using axios
 
-Created empty components yourcard.vue and checkcard.vue for potential refactoring into two separate components.
+* Created empty components yourcard.vue and checkcard.vue for potential refactoring into two separate components.
 
-Document the next steps (see below)
+* Document the next steps (see below)
 
 
 ### Further Steps to take in SnapGame.vue:
