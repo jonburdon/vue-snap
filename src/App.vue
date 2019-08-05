@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     
-    <HelloWorld msg="Welcome to Playing Card Snap"/>
+    <SnapGame msg="Welcome to Playing Card Snap"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SnapGame from './components/SnapGame.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    SnapGame
   }
 }
 </script>
