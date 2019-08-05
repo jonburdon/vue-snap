@@ -7,10 +7,23 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: 'SnapGame',
   props: {
     msg: String
+  },
+    data() {
+    return {
+      cards: []
+    };
+  },
+  created () {
+        axios.get('https://deckofcardsapi.com/api/deck/new/draw/?count=12')
+    .then(res => this.cards = res.data)
+    .catch(err => console.log(err));
+    // console.log(todos)
   }
 }
 </script>
