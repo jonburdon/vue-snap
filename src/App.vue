@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     
-    <SnapGame msg="Welcome to Playing Card Snap"/>
+    <SnapGame msg="Welcome to Snap"/>
   </div>
 </template>
 

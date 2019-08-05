@@ -28,7 +28,7 @@ Document the next steps (see below)
 
 1. Transfer code in to components yourcard.vue and checkcard.vue
 
-2. Display card image for cards.cards[0]
+2. ~~Display card image for cards.cards[0]~~
 
 3. Create a function to set the value of yourcard as cards.cards[0].code
 

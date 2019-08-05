@@ -6,22 +6,24 @@
     Your Card is the 
     {{cards.cards[0].value}} of 
     {{cards.cards[0].suit}} and it's code is {{cards.cards[0].code}} <br>
-    It's image url is {{cards.cards[0].image}}
+    <img :src = "cards.cards[0].image" width="100">
     </p>
+    
     <!-- Display the rest of the cards in the pack -->
     <p>The other cards in the pack are:</p>
 <!-- Could use v-for to display them all. -->
-{{cards.cards[1].value}} of {{cards.cards[1].suit}} <br>
-{{cards.cards[2].value}} of {{cards.cards[2].suit}} <br>
-{{cards.cards[3].value}} of {{cards.cards[3].suit}} <br>
-{{cards.cards[4].value}} of {{cards.cards[4].suit}} <br>
-{{cards.cards[5].value}} of {{cards.cards[5].suit}} <br>
-{{cards.cards[6].value}} of {{cards.cards[6].suit}} <br>
-{{cards.cards[7].value}} of {{cards.cards[7].suit}} <br>
-{{cards.cards[8].value}} of {{cards.cards[8].suit}} <br>
-{{cards.cards[9].value}} of {{cards.cards[9].suit}} <br>
-{{cards.cards[10].value}} of {{cards.cards[10].suit}} <br>
-{{cards.cards[11].value}} of {{cards.cards[11].suit}} <br>
+<img :src = "cards.cards[0].image" width="100">
+<img :src = "cards.cards[1].image" width="100">
+<img :src = "cards.cards[2].image" width="100">
+<img :src = "cards.cards[3].image" width="100">
+<img :src = "cards.cards[4].image" width="100">
+<img :src = "cards.cards[5].image" width="100">
+<img :src = "cards.cards[6].image" width="100"><br>
+<img :src = "cards.cards[7].image" width="100">
+<img :src = "cards.cards[8].image" width="100">
+<img :src = "cards.cards[9].image" width="100">
+<img :src = "cards.cards[10].image" width="100">
+<img :src = "cards.cards[11].image" width="100">
 
   </div>
 </template>
@@ -44,15 +46,22 @@ export default {
     };
   },
   methods: {
-    yourcardpicker: function yours() {
-
-      return ;
-    }
+    // ------------------- Shuffle an Array
+    // From https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+    randomisecards: function shuffleArray(array)
+      {
+        for (let i = array.length - 1; i > 0; i--)
+          {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+      }
   },
   created () {
     axios.get('https://deckofcardsapi.com/api/deck/new/draw/?count=12')
     .then(res => this.cards = res.data)
     .catch(err => console.log(err));
+    
   }
 }
 </script>
